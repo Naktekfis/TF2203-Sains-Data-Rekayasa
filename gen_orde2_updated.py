@@ -6,6 +6,8 @@ Output format to the text file
 
 @author: Eko Mursito Budi
 di sini, gw cuma edit tipis2 aja
+
+kekny banyak yg salah di kode ini.
 """
 import random as rd
 import time as time
@@ -124,7 +126,7 @@ with open(file_name, 'w') as file:
         # simpan ke file
         # Mengubah format penyimpanan y agar lebih mudah dibaca dan diproses nanti
         """
-        fyi, di sini gw cuman ngubah agar output dalam excelnya itu berbentuk "[array1, array2, array3], tipe"
+        fyi, di sini gw cuman ngubah agar output dalam excelnya itu berbentuk "[array1 array2 array3], tipe"
         karena, di kode "gen_orde2" awal ngga kek gitu hasilnya. dah, 'sami'na wa atho'na" aja yagesya
         """
         # [y0 y1 ... y_max_sample-1]
