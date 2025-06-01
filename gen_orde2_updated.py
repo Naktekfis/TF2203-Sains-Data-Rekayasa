@@ -73,15 +73,15 @@ def gen_step():
 
     # Menghasilkan angka acak antara 0 dan 99 (100 kemungkinan nilai)
     # Kita bagi 100 kemungkinan ini menjadi 4 bagian yang kurang lebih sama
-    rtype_val = rd.randint(0, 99)
+    rtype_val = rd.randint(0, 999)
 
-    if rtype_val < 25:         # Peluang 25/100 (25%) untuk undamped
+    if rtype_val < 250:         # Peluang 25/100 (25%) untuk undamped
         psi = 0
         d = 0
-    elif rtype_val < 50:       # Peluang (50-25)/100 = 25/100 (25%) untuk under_damped
+    elif rtype_val < 500:       # Peluang (50-25)/100 = 25/100 (25%) untuk under_damped
         psi = 0.05 + rd.random()*0.9 # Menjaga range psi yang valid untuk under_damped
         d = 1
-    elif rtype_val < 75:       # Peluang (75-50)/100 = 25/100 (25%) untuk critically_damped
+    elif rtype_val < 750:       # Peluang (75-50)/100 = 25/100 (25%) untuk critically_damped
         psi = 1.0
         d = 2
     else:                      # Peluang (100-75)/100 = 25/100 (25%) untuk over_damped
